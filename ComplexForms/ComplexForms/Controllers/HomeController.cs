@@ -7,18 +7,26 @@ using System.Web.Mvc;
 
 namespace ComplexForms.Controllers
 {
-    public class HomeController : Controller
+    public partial class HomeController : Controller
     {
         //
         // GET: /Home/
         [HttpGet]
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
-            return View();
+            ComplexVM model = new ComplexVM();
+
+            SimpleFirstVM sub1 = new SimpleFirstVM();
+            model.simpleFirstVM = sub1;
+
+            SimpleSecondVM sub2 = new SimpleSecondVM();
+            model.simpleSecondVM = sub2;
+
+            return View(model);
         }
 
         [HttpPost]
-        public ActionResult Index(ComplexVM model)
+        public virtual ActionResult Index(ComplexVM model)
         {
             return View(model);
         }

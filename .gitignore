@@ -183,3 +183,11 @@ ComplexForms/packages/WebGrease.1.1.0/lib/Antlr3.Runtime.dll
 ComplexForms/packages/WebGrease.1.1.0/lib/WebGrease.dll
 ComplexForms/packages/WebGrease.1.1.0/tools/WG.exe
 ComplexForms/packages/WebGrease.1.1.0/WebGrease.1.1.0.nupkg
+ComplexForms/ComplexForms/obj/Debug/TempPE/T4MVC.cs.dll
+ComplexForms/packages/T4MVC.3.10.0/Content/T4MVC.tt
+ComplexForms/packages/T4MVC.3.10.0/Content/T4MVC.tt.hooks.t4
+ComplexForms/packages/T4MVC.3.10.0/T4MVC.3.10.0.nupkg
+ComplexForms/packages/T4MVC.3.10.0/tools/install.ps1
+ComplexForms/packages/T4MVCExtensions.3.10.0/lib/net40/T4MVCExtensions.dll
+ComplexForms/packages/T4MVCExtensions.3.10.0/T4MVCExtensions.3.10.0.nupkg
+ComplexForms/ComplexForms/bin/T4MVCExtensions.dll
