@@ -1,0 +1,12 @@
+﻿@model PassingModels.Models.ViewModels.SearchVM
+
+Results:<br />
+@{
+    if (Model.Results != null)
+    {
+        foreach (var item in Model.Results)
+        {
+    @item.Name<br />
+        }
+    }
+}
