@@ -11,6 +11,5 @@ namespace PassingModels.Models.ViewModels
         public string Setting2 { get; set; }
         public string Query { get; set; }
         public List<DbModel> Results { get; set; }
-        public object TrickyPersistence { get; set; }
     }
 }

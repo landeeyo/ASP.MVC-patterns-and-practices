@@ -2,11 +2,13 @@
 
 Filter:
 <br />
-@*//@using (Html.BeginForm(MVC.Search.ActionNames.Search, MVC.Search.Name, FormMethod.Post, new { enctype = "multipart/form-data" }))*@
-@using (Html.BeginForm(MVC.Search.ActionNames.Search, MVC.Search.Name, new { SearchVM = Model }, FormMethod.Post))
+
+
+@using (Html.BeginForm(MVC.Search.ActionNames.Search, MVC.Search.Name, FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.HiddenFor(model => model.Setting)
-    @Html.HiddenFor(model => model.TrickyPersistence)
     @Html.TextBoxFor(model => model.Query)
     <input type="submit" value="Search" />
 }
+
+@*@using (Html.BeginForm(MVC.Search.ActionNames.Search, MVC.Search.Name, new { SearchVM = Model }, FormMethod.Post))*@

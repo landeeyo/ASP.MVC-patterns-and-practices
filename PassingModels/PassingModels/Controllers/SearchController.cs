@@ -14,6 +14,7 @@ namespace PassingModels.Controllers
         {
             var model = new SearchVM();
             model.Setting = "test setting";
+            //Setting2 will be lost during post because it isn't bound in the form on the view!
             model.Setting2 = "test setting2";
             return View(model);
         }
@@ -21,7 +22,15 @@ namespace PassingModels.Controllers
         [HttpPost]
         public virtual ActionResult Search(SearchVM model)
         {
-            var model2 = model.TrickyPersistence as SearchVM;
+            model.Results = new List<Models.DbModel>();
+            model.Results.Add(new Models.DbModel()
+            {
+                Name = "test"
+            });
+            model.Results.Add(new Models.DbModel()
+            {
+                Name = "test2"
+            });
             return View(model);
         }
 
